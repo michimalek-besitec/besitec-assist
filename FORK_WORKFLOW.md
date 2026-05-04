@@ -17,6 +17,12 @@ This fork is kept as a clean mirror of the upstream project until custom changes
 5. Update the Docker Compose or Portainer stack to use the new image tag.
 6. Restart Open WebUI and watch the logs for database migrations.
 
+## Release model
+
+- This fork does not rely on the GitHub Releases tab for normal updates.
+- The Docker image tag in GHCR is the main release artifact.
+- If a release workflow is disabled, that is expected; the fork can still be updated by syncing `main` and building a new image.
+
 ## Database safety
 
 - Always make a database backup before upgrading.
